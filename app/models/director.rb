@@ -4,6 +4,9 @@ class Director < ApplicationRecord
 
 validates :name, :presence => true, :uniqueness => {:scope => :dob}
 
+has_many :movies
+
+
   # - dob: no rules
   # - bio: no rules
   # - image_url: no rules
