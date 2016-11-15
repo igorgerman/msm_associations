@@ -35,7 +35,7 @@
 
 Characters they have played
 
-<% Character.where(:actor_id => @actor.id).each do |character| %>
+<% @actor.characters.each do |character| %>
 
   <li> <a href="/characters/<%=character.id%>"> <%= character.name %> </a> </li>
 <% end %>
