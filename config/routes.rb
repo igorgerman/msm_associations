@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # Routes for the Actor resource:
   # CREATE
+  get "/", :controller => "movies", :action => "index"
   get "/actors/new", :controller => "actors", :action => "new"
   post "/create_actor", :controller => "actors", :action => "create"
 
